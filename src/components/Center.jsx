@@ -3,13 +3,16 @@ import Card from '../components/Card'
 
 function Center() {
   const [input, setInput] = useState([])
+  const [button,setButton] = useState([])
   function handleInput(e){
     setInput(e.target.value)
   }
   function handleClick(e){
     e.preventDefault();
     console.log(input);
-    
+    setInput(e.target.value)
+    setButton(input)
+    console.log(button);
   }
   return (
     <div className="center_container">
@@ -31,7 +34,7 @@ function Center() {
               <input type="text" className="center_container_box_second_input" value={input} onChange={handleInput}/>
               <button className="btn" onClick={handleClick}>Submit</button>
                          <div>
-                         <Card value={input}></Card>
+                         <Card value={button}></Card>
                          </div>
             </form>
         </div>
