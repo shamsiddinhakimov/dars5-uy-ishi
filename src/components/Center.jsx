@@ -11,7 +11,7 @@ function Center() {
     e.preventDefault();
     console.log(input);
     setInput(e.target.value)
-    setButton(...button,input)
+    setButton(input)
    console.log(button)
   }
   return (
