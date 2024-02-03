@@ -12,7 +12,7 @@ function Center() {
     console.log(input);
     setInput(e.target.value)
     setButton(input)
-   console.log(button)
+   
   }
   return (
     <div className="center_container">
