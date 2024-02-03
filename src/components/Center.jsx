@@ -27,11 +27,13 @@ function Center() {
         <div className="center_container_box_second">
 
         <div>
-            <input type="text" className="center_container_box_second_input" value={input} onChange={handleInput}/>
-            <button className="btn" onClick={handleClick}>Submit</button>
-           <div>
-           <Card value={input}></Card>
-           </div>
+            <form action="">
+              <input type="text" className="center_container_box_second_input" value={input} onChange={handleInput}/>
+              <button className="btn" onClick={handleClick}>Submit</button>
+                         <div>
+                         <Card value={input}></Card>
+                         </div>
+            </form>
         </div>
 
         </div>
