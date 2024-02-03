@@ -9,10 +9,10 @@ function Center() {
   }
   function handleClick(e){
     e.preventDefault();
-
+    console.log(input);
     setInput(e.target.value)
     setButton(input)
-   
+   console.log(button)
   }
   return (
     <div className="center_container">
